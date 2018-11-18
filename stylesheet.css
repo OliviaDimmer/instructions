@@ -45,37 +45,52 @@ table {
 html {
 
 font-family: Futura book, "Trebuchet MS", Arial, sans-serif;
-margin: 3em;
 
 }
 
 h1 {
 font-size: 3em;
 font-weight: bold;
-margin-bottom: 2em;
+margin: 1em;
 line-height: 1.25em;
 }
 
 h2 {
 font-size: 2.5em;
 font-weight: bold;
+margin-bottom: 2em;
 }
 
+.wrapper {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 section {
-
-  margin: 2em 0 2em 0;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  overflow: auto;
+
 }
 
 ul {
 
-margin: 2em 0 2em 0;
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
+  margin: 0 5em 0 5em;
+}
+
+.do {
+  padding: .5em;
+  background-color: #b7e2b3;
+  overflow:auto;
+
+
+}
+
+.dont {
+  padding: .5em;
+  background-color: #f7b4b4;
 
 
 }
@@ -96,8 +111,13 @@ font-size: 1.5em;
 
 /* media queries  */
 /* Smartphone----------- */
-@media screen and (min-width : 320px) {
+@media screen and (min-width : 320px) and (max-width: 768px) {
   /* Styles */
+
+  .wrapper {
+
+    display: block;
+  }
 
   section {
 
@@ -105,11 +125,26 @@ font-size: 1.5em;
     display: block;
   }
 
+  ul {
+
+    margin-left: 3em;
+  }
+
+  .do, .dont {
+
+    padding-left: 1.2em;
+  }
+
+  figcaption {
+
+    margin: 2em 0 3em 0;
+  }
+
 
 }
 
 /* iPads  ----------- */
-@media screen and (min-width : 768px) {
+@media screen and (min-width : 768px) and (max-width: 1224px) {
   /* Styles */
 
   .wrapper {
@@ -136,5 +171,6 @@ font-size: 1.5em;
     margin: 2em 0 2em 0;
     display: flex;
   }
+
 
 }

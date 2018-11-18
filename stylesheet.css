@@ -48,6 +48,11 @@ font-family: Futura book, "Trebuchet MS", Arial, sans-serif;
 
 }
 
+.logo {
+  margin: 2.75em 0 0 2.75em;
+  width: 15em;
+}
+
 h1 {
 font-size: 3em;
 font-weight: bold;
@@ -172,5 +177,9 @@ font-size: 1.5em;
     display: flex;
   }
 
+.logo {
+
+  margin-left: 2em;
+}
 
 }

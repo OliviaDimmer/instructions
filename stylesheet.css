@@ -63,6 +63,10 @@ header {
   margin: 2em;
 }
 
+.intro {
+  background-color: #c2c3c4;
+}
+
 h2 {
 font-size: 1.5em;
 font-weight: bold;

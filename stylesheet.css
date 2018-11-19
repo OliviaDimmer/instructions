@@ -156,6 +156,11 @@ li {
   margin:2em;
 }
 
+.do, .dont {
+  padding: 1em 0 1em 1.35em;
+
+}
+
 }
 
 /* Desktops and laptops ----------- */

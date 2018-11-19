@@ -49,140 +49,123 @@ font-family: Futura book, "Trebuchet MS", Arial, sans-serif;
 }
 
 .logo {
-  margin: 2.75em 0 0 2.75em;
-  width: 15em;
+  width: 10em;
 }
 
 h1 {
-font-size: 3em;
+font-size: 2em;
 font-weight: bold;
-margin: 1em;
 line-height: 1.25em;
+margin-top: 1em;
+}
+
+header {
+  margin: 2em;
 }
 
 h2 {
-font-size: 2.5em;
+font-size: 1.5em;
 font-weight: bold;
-margin-bottom: 2em;
 }
 
-.wrapper {
+ul {
 
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  flex: 1 1 auto;
 }
+
 
 section {
   display: flex;
   flex-direction: column;
 }
 
-ul {
-
-  margin: 0 5em 0 5em;
-}
-
 .do {
-  padding: .5em;
+  padding: 1em 0 1em 1.5em;
   background-color: #b7e2b3;
-  overflow:auto;
-
-
 }
 
 .dont {
-  padding: .5em;
+  padding: 1em 0 1em 1.5em;
   background-color: #f7b4b4;
-
-
 }
+
 
 figure {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
+  margin: 2em;
+}
+
+figure img {
+  max-width: 10em;
 }
 
 figcaption {
 
 margin: 2em 0 3em 0;
-font-size: 1.5em;
+font-size: 1em;
 
 }
 
 
 /* media queries  */
 /* Smartphone----------- */
-@media screen and (min-width : 320px) and (max-width: 768px) {
+@media screen and (min-width : 320px) and (max-width: 892px) {
   /* Styles */
 
-  .wrapper {
 
-    display: block;
+  figcaption {
+    font-size: 1.5em;
+
   }
 
-  section {
-
-    margin: 2em 0 2em 0;
-    display: block;
+  h1 {
+    font-size:2.5em;
   }
 
-  ul {
+  h2 {
+  font-size: 2em;
+  margin: 0em;
 
-    margin-left: 3em;
+  }
+
+  figure img {
+    max-width: 320px;
   }
 
   .do, .dont {
-
-    padding-left: 1.2em;
+    padding: 1em;
   }
-
-  figcaption {
-
-    margin: 2em 0 3em 0;
-  }
-
 
 }
 
 /* iPads  ----------- */
-@media screen and (min-width : 768px) and (max-width: 1224px) {
+@media screen and (min-width : 893px) and (max-width: 1151px) {
   /* Styles */
 
-  .wrapper {
-
-    display: flex
-  }
-  section {
-
-    margin: 2em 0 2em 0;
-    display: flex;
-  }
-
-  ul {
-
-    margin-left: 0;
-  }
+li {
+  margin:2em;
+}
 
 }
 
 /* Desktops and laptops ----------- */
-@media  screen and (min-width : 1224px) {
+@media  screen and (min-width : 1151px) {
   /* Styles */
-  .wrapper {
-
-    display: flex
-  }
-  section {
-
-    margin: 2em 0 2em 0;
-    display: flex;
-  }
-
   ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2em 0 2em 0;
 
-    margin-left: 0;
   }
+
+  .do, .dont {
+    padding: 1em 0 1em 1.35em;
 
 }
